@@ -1,0 +1,147 @@
+{
+  "schema": "contextperf.minimal-public-candidate.provenance.v1",
+  "title": "ContextPerf: Context-Aware Performance Regression Reproduction for Database Systems",
+  "intended_repository_name": "ContextPerf-EDBT2027-Artifact",
+  "status": "PRIVATE_PREPARATION_NOT_RELEASED",
+  "prepared_date": "2026-10-06",
+  "source_manuscript_baseline_commit": "b4e4cba8d4a1688c6a5ce055480f4bbdfeab4be1",
+  "license_status": "UNESTABLISHED_BLOCKS_DISTRIBUTION",
+  "source_bundle_sha256": "a524d6506ff24d21d6d067af26a2c56723208334c1684d15562ca204b866bcbd",
+  "source_bundle_note": "Excluded private source container. Hash is an opaque provenance commitment, not a download address or a license.",
+  "observations": "Selected historical E1-E5 compact records and Figure 3 only; no new experiment or statistical estimator.",
+  "records": [
+    {
+      "source_id": "S001",
+      "description": "Frozen E1 six paired summaries and original decision metadata",
+      "source_commit": "64fdd213c47ff5268f2f3cf11bbb950b59d75e7b",
+      "source_sha256": "e7f18540b83fb7c4bcd961afd8e81b7f068b89f1b5b22fc6df29f8afd8cecc49",
+      "source_git_blob_sha1": "f3e6eb94a2ec8d7e4b294650f409cfaa58196fb3",
+      "source_bytes": 1436,
+      "artifact_path": "artifact/evidence/e1-preload-summary.json",
+      "transformation": "Exact byte copy; only the destination filename and directory change.",
+      "artifact_sha256": "e7f18540b83fb7c4bcd961afd8e81b7f068b89f1b5b22fc6df29f8afd8cecc49"
+    },
+    {
+      "source_id": "S002",
+      "description": "Frozen E1 paired elapsed-time compact records",
+      "source_commit": "64fdd213c47ff5268f2f3cf11bbb950b59d75e7b",
+      "source_sha256": "448c7d64446c5ead9271f81f43f5a39801cbf9b2c1e3bf181d6e52fea4aac9bc",
+      "source_git_blob_sha1": "b28995f9ee50f3a0f7590c73734053f2d7bf0767",
+      "source_bytes": 4472,
+      "artifact_path": "artifact/evidence/e1-preload-pairs.tsv",
+      "transformation": "Exact byte copy; only the destination filename and directory change.",
+      "artifact_sha256": "448c7d64446c5ead9271f81f43f5a39801cbf9b2c1e3bf181d6e52fea4aac9bc"
+    },
+    {
+      "source_id": "S003",
+      "description": "Frozen E1 physical-shape construction compact records",
+      "source_commit": "64fdd213c47ff5268f2f3cf11bbb950b59d75e7b",
+      "source_sha256": "ff704b4f260dc4fc05363a1d1149cd2d03b680df263bbea84652f847c8f635ae",
+      "source_git_blob_sha1": "70a1883f0f3a35a9d2e69b4af1fdc3b35751f881",
+      "source_bytes": 2518,
+      "artifact_path": "artifact/evidence/e1-preload-construction.tsv",
+      "transformation": "Exact byte copy; only the destination filename and directory change.",
+      "artifact_sha256": "ff704b4f260dc4fc05363a1d1149cd2d03b680df263bbea84652f847c8f635ae"
+    },
+    {
+      "source_id": "S004",
+      "description": "Frozen E2 nine-setting catalog curve with retained pair ratios",
+      "source_commit": "64fdd213c47ff5268f2f3cf11bbb950b59d75e7b",
+      "source_sha256": "5e50e860b4d406df9edb187325a51e5d12b24cfa21343aca3c78950e89cfa35b",
+      "source_git_blob_sha1": "053fd3113559e0acb3a6026ad52ced87b3ebc274",
+      "source_bytes": 2877,
+      "artifact_path": "artifact/evidence/e2-catalog-curve.csv",
+      "artifact_sha256": "c5ca472016b394addd50ae7131f437015c9e3f7202d3116b702549e4ef490d18",
+      "transformation": "CSV parsed as text and emitted in original row and column order with LF line endings. No numeric or Boolean cell is modified. Three header changes and source-path replacement are listed explicitly.",
+      "header_renames": {
+        "pairs_above_apollo_2x": "pairs_above_illustrative_2x",
+        "apollo_median_signal": "illustrative_median_signal",
+        "source_path": "source_batch"
+      },
+      "batch_replacement_rule": "Assign B001, B002 in order of first appearance of each distinct original source_path. Preserve row membership. Original path strings are excluded.",
+      "batch_scope": {
+        "B001": "The two endpoint settings (0 and 4000); original measurement batch one.",
+        "B002": "The seven interior settings; original measurement batch two."
+      }
+    },
+    {
+      "source_id": "S005",
+      "description": "Frozen E3 six timing-disabled calibration cells",
+      "source_commit": "64fdd213c47ff5268f2f3cf11bbb950b59d75e7b",
+      "source_sha256": "cd932f99a53f8aa5a8a8d89bd371f6b7525dcd8b30a49ce1272c45f509bcf208",
+      "source_git_blob_sha1": "8451f18bf72aa3397d5f40e2982ec2a859937578",
+      "source_bytes": 746,
+      "artifact_path": "artifact/tables/e3-native-work-calibration.csv",
+      "transformation": "Exact byte copy; only the destination filename and directory change.",
+      "artifact_sha256": "cd932f99a53f8aa5a8a8d89bd371f6b7525dcd8b30a49ce1272c45f509bcf208"
+    },
+    {
+      "source_id": "S006",
+      "description": "Frozen E3 four timing-disabled within-case target cells",
+      "source_commit": "64fdd213c47ff5268f2f3cf11bbb950b59d75e7b",
+      "source_sha256": "fe8d5509961b9427d3c5692d5916876b0e689990ae7b6d3a5de0fd81c26655e3",
+      "source_git_blob_sha1": "a162abf15358e7fd8d43292d32bf25198cda8681",
+      "source_bytes": 515,
+      "artifact_path": "artifact/tables/e3-native-work-targets.csv",
+      "transformation": "Exact byte copy; only the destination filename and directory change.",
+      "artifact_sha256": "fe8d5509961b9427d3c5692d5916876b0e689990ae7b6d3a5de0fd81c26655e3"
+    },
+    {
+      "source_id": "S007",
+      "description": "Frozen E4 eighteen timing-disabled work-count cells",
+      "source_commit": "64fdd213c47ff5268f2f3cf11bbb950b59d75e7b",
+      "source_sha256": "ebbbf5a4a86f36c489acfdb27d9abeefef60c3a5bdc40b4bf3ae8ad6f59a2165",
+      "source_git_blob_sha1": "83f99075229a449a210c006ef91b5df1a5769528",
+      "source_bytes": 2091,
+      "artifact_path": "artifact/tables/e4-native-work-counts.csv",
+      "transformation": "Exact byte copy; only the destination filename and directory change.",
+      "artifact_sha256": "ebbbf5a4a86f36c489acfdb27d9abeefef60c3a5bdc40b4bf3ae8ad6f59a2165"
+    },
+    {
+      "source_id": "S008",
+      "description": "Frozen E5 nine-target analytical direct-template equivalence audit",
+      "source_commit": "64fdd213c47ff5268f2f3cf11bbb950b59d75e7b",
+      "source_sha256": "4504bd58737618e9a09b1038f1933381414f811b67ceda4879f336600addc993",
+      "source_git_blob_sha1": "68b8adbb74c2dc49ee4bb48dfc9db19faebab709",
+      "source_bytes": 462,
+      "artifact_path": "artifact/tables/e5-constructor-equivalence.csv",
+      "transformation": "Exact byte copy; only the destination filename and directory change.",
+      "artifact_sha256": "4504bd58737618e9a09b1038f1933381414f811b67ceda4879f336600addc993"
+    },
+    {
+      "source_id": "S009",
+      "description": "Frozen E3 direct-template match and claim-boundary record",
+      "source_commit": "64fdd213c47ff5268f2f3cf11bbb950b59d75e7b",
+      "source_sha256": "a7fbf0b9f49f795e1cae8530fd432edf1482a726f63797e8dfbb25bc10f485ee",
+      "source_git_blob_sha1": "025da7aa729460fa841f6a1b62b0c8a3c346407f",
+      "source_bytes": 358,
+      "artifact_path": "artifact/evidence/e3-template-result.json",
+      "transformation": "Exact byte copy; only the destination filename and directory change.",
+      "artifact_sha256": "a7fbf0b9f49f795e1cae8530fd432edf1482a726f63797e8dfbb25bc10f485ee"
+    },
+    {
+      "source_id": "S010",
+      "description": "Frozen manuscript Figure 3 vector rendering",
+      "source_commit": "b4e4cba8d4a1688c6a5ce055480f4bbdfeab4be1",
+      "source_sha256": "fafdcbb3a3753276e26f953c0218dc2330371872563f5bd892e65c6e8073a149",
+      "source_git_blob_sha1": "3bfa057fea15d754e4903a3e7697cc337392e2b0",
+      "source_bytes": 31875,
+      "artifact_path": "artifact/figures/figure3-historical-context.svg",
+      "artifact_sha256": "fafdcbb3a3753276e26f953c0218dc2330371872563f5bd892e65c6e8073a149",
+      "transformation": "Exact byte copy of the frozen manuscript rendering; no replotting, new estimate, or interval calculation."
+    }
+  ],
+  "generated_files": {
+    "README.md": "Package description and limitations.",
+    "LICENSE": "Pending-license notice only.",
+    "docs/artifact_scope.md": "Selected scope and exclusions.",
+    "docs/reproduction_boundary.md": "Audit and reproduction limitations.",
+    "docs/public_release_checklist.md": "Unresolved release gates.",
+    "artifact/figures/FIGURE3_INPUTS.json": "Field pointers into retained frozen inputs.",
+    "artifact/tables/selected-claim-map.csv": "Editorial claim-scope summary; no new observations.",
+    "scripts/verify_hashes.py": "Read-only package inventory and selected consistency checks.",
+    "artifact/manifests/provenance.json": "This transformation and provenance inventory.",
+    "SHA256SUMS": "Integrity inventory for all other package files."
+  },
+  "verification_boundary": "SHA-256 authenticates provided bytes only. Source hashes do not establish private-source availability, native execution, complete raw reproduction, or trusted authorship."
+}

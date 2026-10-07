@@ -1,0 +1,52 @@
+{
+  "schema": "contextperf.public-evidence.figure3.v1",
+  "figure": "artifact/figures/figure3-historical-context.svg",
+  "panel_a": {
+    "source_id": "S001",
+    "path": "artifact/evidence/e1-preload-summary.json",
+    "records": "paired_summaries",
+    "shapes": [
+      "one_large",
+      "one_small",
+      "four_small"
+    ],
+    "candidates": [
+      "bounded",
+      "chunked"
+    ],
+    "point_field": "median",
+    "interval_fields": [
+      "ci95_low",
+      "ci95_high"
+    ],
+    "ratio_direction": "base/candidate elapsed-time speedup",
+    "reference": 1,
+    "outcomes": 6
+  },
+  "panel_b": {
+    "source_id": "S004",
+    "path": "artifact/evidence/e2-catalog-curve.csv",
+    "x_field": "distractor_tables",
+    "x_values": [
+      0,
+      10,
+      50,
+      100,
+      250,
+      500,
+      1000,
+      2000,
+      4000
+    ],
+    "point_field": "median_runtime_ratio",
+    "interval_fields": [
+      "bootstrap95_low_ratio",
+      "bootstrap95_high_ratio"
+    ],
+    "ratio_direction": "new/old elapsed-time slowdown",
+    "illustrative_threshold_exclusive": 2,
+    "outcomes": 9,
+    "estimator_boundary": "Use the stored median-derived ratio, not a new median of the displayed pair ratios."
+  },
+  "boundary": "Panels have different ratio directions and protocols; do not pool them. Original estimates and intervals are retained; no bootstrap or estimator was rerun."
+}

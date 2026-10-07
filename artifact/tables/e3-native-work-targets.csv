@@ -1,0 +1,5 @@
+target_count,role,effective_carrier_count,logical_digest,timing_fields_present,handler,rows_visited,actual_rows_returned,rows_removed_by_filter,loops,shared_hit_blocks,shared_read_blocks
+1500,parent,1500,b9e5240bcc0307d1200ba08a58c948fa,false,Index Scan,1,1,0,1,6,0
+1500,intro,1500,b9e5240bcc0307d1200ba08a58c948fa,false,Seq Scan,7921,1,7920,1,178,0
+3000,intro,3000,b9e5240bcc0307d1200ba08a58c948fa,false,Seq Scan,15421,1,15420,1,345,0
+3000,parent,3000,b9e5240bcc0307d1200ba08a58c948fa,false,Index Scan,1,1,0,1,6,0

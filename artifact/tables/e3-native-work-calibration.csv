@@ -1,0 +1,7 @@
+carrier_count,role,logical_digest,handler,timing_fields_present,effective_carrier_tables,effective_carrier_payload_indexes,rows_visited,actual_rows_returned,rows_removed_by_filter,loops,shared_hit_blocks,shared_read_blocks
+1000,parent,b9e5240bcc0307d1200ba08a58c948fa,Index Scan,false,1000,1000,1,1,0,1,6,0
+1000,intro,b9e5240bcc0307d1200ba08a58c948fa,Seq Scan,false,1000,1000,5421,1,5420,1,123,0
+2000,intro,b9e5240bcc0307d1200ba08a58c948fa,Seq Scan,false,2000,2000,10421,1,10420,1,234,0
+2000,parent,b9e5240bcc0307d1200ba08a58c948fa,Index Scan,false,2000,2000,1,1,0,1,6,0
+4000,parent,b9e5240bcc0307d1200ba08a58c948fa,Index Scan,false,4000,4000,1,1,0,1,6,0
+4000,intro,b9e5240bcc0307d1200ba08a58c948fa,Seq Scan,false,4000,4000,20421,1,20420,1,456,0

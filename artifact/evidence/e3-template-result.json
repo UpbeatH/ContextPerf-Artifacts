@@ -1,0 +1,10 @@
+{
+  "claim_boundary": "component feasibility only; no old/new timing, verdict, novelty, or cross-engine claim",
+  "closed_form_template_matches_solver": true,
+  "decision": "M1_VERTICAL_VALID_TEMPLATE_MATCH",
+  "failures": [],
+  "schema": "contextperf.postgres-m1-result.v1",
+  "target_rows": 4,
+  "technical_valid": true,
+  "work_and_handler_match": true
+}

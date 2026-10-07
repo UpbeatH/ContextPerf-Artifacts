@@ -1,5 +1,21 @@
-# License Status
+PUBLIC ACCESS NOTICE — NO GENERAL LICENSE GRANT
 
-Artifact distribution license is pending confirmation.
+This repository is made publicly accessible for scholarly inspection and review
+of the ContextPerf evidence-audit artifact.
 
-No license grant is made by this placeholder.
+No general permission is granted to copy, modify, sublicense, redistribute, or
+relicense these materials beyond rights provided by applicable law or separate
+written permission from the relevant rights holder. Copyright and other rights
+remain with their respective rights holders.
+
+The released package contains selected author-side compact evidence, derived
+tables, manifests, verification code, and figure material. It does not include
+upstream database source distributions or binaries. References to third-party
+projects do not import or override those projects' licenses.
+
+Public repository access is not a statement that the package is a complete
+experiment-reproduction environment, nor does it grant permission to redistribute
+excluded private/raw materials.
+
+Release authorized for public evidence review by the repository owner.
+Prepared for the ContextPerf EDBT 2027 submission, 2026-10-07.

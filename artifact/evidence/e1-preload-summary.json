@@ -1,0 +1,47 @@
+{
+  "schema": "contextperf.cp-q-c21632-p2-v1.summary.v1",
+  "decision": "P2_DIRECT_TEMPLATE_MOTIVATION_GO",
+  "decision_rule": {
+    "critical_mad_over_median_max": 0.2,
+    "chunked_large_median_speedup_min": 1.25,
+    "chunked_large_ci95_low_min_exclusive": 1.05,
+    "valid_null_is_not_route_nogo": true
+  },
+  "critical_noise": 0.03261984493430735,
+  "paired_summaries": {
+    "four_small:bounded": {
+      "median": 0.9944614434374888,
+      "ci95_low": 0.9436351328528579,
+      "ci95_high": 1.0400440959028217
+    },
+    "four_small:chunked": {
+      "median": 0.9541840285053702,
+      "ci95_low": 0.9226615397163207,
+      "ci95_high": 0.966593226575728
+    },
+    "one_large:bounded": {
+      "median": 2.4738814869443706,
+      "ci95_low": 2.363046623883835,
+      "ci95_high": 2.645568692432709
+    },
+    "one_large:chunked": {
+      "median": 2.6864276065004455,
+      "ci95_low": 2.6163019015856546,
+      "ci95_high": 2.8338648654849576
+    },
+    "one_small:bounded": {
+      "median": 1.0016610438292122,
+      "ci95_low": 0.9691094242264915,
+      "ci95_high": 1.0424809089378424
+    },
+    "one_small:chunked": {
+      "median": 1.010138681395083,
+      "ci95_low": 0.9814294092904831,
+      "ci95_high": 1.0517446979773752
+    }
+  },
+  "equal_work_logical_input_sha256": "0f0ba868878e94d7c5a508f7ec3b547769953f3e75d4fdd85a83513950fb6e1f",
+  "samples": 108,
+  "bootstrap_samples": 20000,
+  "bootstrap_seed": 21632
+}

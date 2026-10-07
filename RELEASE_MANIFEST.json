@@ -1,0 +1,34 @@
+{
+  "schema": "contextperf.public-evidence-audit-release.v1",
+  "artifact_repository": "https://github.com/UpbeatH/ContextPerf-Artifacts",
+  "artifact_scope": "bounded E1-E5 evidence audit; not complete experiment reproduction",
+  "manuscript_repository": "UpbeatH/ContextPerf",
+  "manuscript_commit": "8345496f3b258d0c26ada2831d734be2cddd6aa8",
+  "publication_authorization": "explicitly authorized by repository owner in the submission-closure workflow",
+  "repository_visibility": "public",
+  "release_date": "2026-10-07",
+  "license_status": "public access; no general reuse/redistribution license granted",
+  "historical_provenance_manifest_note": "artifact/manifests/provenance.json is retained byte-for-byte from the pre-release preparation package. Its PRIVATE_PREPARATION_NOT_RELEASED status and intended repository name are historical preparation metadata, not the current repository status.",
+  "included_evidence": [
+    "E1 Cassandra preload",
+    "E2 PostgreSQL catalog curve",
+    "E3 PostgreSQL native work",
+    "E4 Cassandra native work",
+    "E5 constructor equivalence",
+    "Figure 3"
+  ],
+  "excluded_evidence": [
+    "E6-E8 DuckDB source/result reports",
+    "raw experiment roots",
+    "private infrastructure",
+    "build trees and databases",
+    "complete per-invocation receipts",
+    "full end-to-end receipt efficacy experiment"
+  ],
+  "verification": {
+    "sha256_inventory": "SHA256SUMS",
+    "local_verifier": "scripts/verify_hashes.py",
+    "public_visibility_verified": true,
+    "credential-free_independent_download_test": "pending final author-side sign-out check"
+  }
+}
